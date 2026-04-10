@@ -1,0 +1,14 @@
+Trait,Category,Description,Scale,Units,Data_Type,Collection_Method,Notes
+index,Identifier,Unique plant identifier,None,None,String,Assigned,Primary unique ID
+index2,Identifier,Alternative formatted identifier,None,None,String,Assigned,Used for formatting consistency
+Accession,Genetics,Family or accession ID,None,None,String,Assigned,Represents genetic background
+family,Genetics,Family grouping,None,None,String,Assigned,Derived from breeding design
+Plot,Experimental,Field plot number,None,None,Integer,Field layout,Used for spatial tracking
+Plant,Experimental,Plant number within plot,None,None,Integer,Field tagging,Within-plot identifier
+Plant Height,Morphology,Height of plant at measurement,Continuous,cm,Continuous,Measured in field,Confirm unit (cm assumed)
+Lateral tillers,Morphology,Number of lateral tillers per plant,Continuous,count,Continuous,Field counting,Indicator of branching
+Compact,Inflorescence,Panicle compactness score,1-5,None,Ordinal,Visual scoring,1=loose 5=compact
+FALL Rhizomes,Perenniality,Rhizome presence or vigor in fall,+|++|+++,None,Ordinal,Field observation,+ low +++ high
+Rhiz_num,Perenniality,Number of rhizomes per plant,Continuous,count,Continuous,Field counting,Quantitative rhizome measure
+Genotype?,DataQuality,Whether genotype data is available,Y|N,None,Categorical,Data annotation,Used for filtering
+Regrowth,Perenniality,Regrowth after harvest,YES|NO,None,Categorical,Field observation,Key perennial trait
