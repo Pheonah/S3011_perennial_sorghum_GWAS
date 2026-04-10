@@ -36,4 +36,4 @@ Raw data are provided without modification.
 Nabukalu et al. (in preparation)
 
 ## Contact
-Dr. Pheonah Nabukalu
+Pheonah Nabukalu Ph.D
