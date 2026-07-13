@@ -1,39 +1,81 @@
-# S3011 Perennial Sorghum GWAS Dataset
+# S3011 Perennial Sorghum GWAS and Local Ancestry Analysis
 
-## Description
-This repository contains phenotypic data and supporting metadata for the S3011 diploid perennial sorghum population derived from interspecific hybridization between *Sorghum bicolor* and *S. halepense*. The population was evaluated for key agronomic and perenniality traits, including grain yield, rhizome development, and regrowth capacity.
+## Overview
+
+This repository contains the data and reproducible analysis pipeline
+supporting the manuscript:
+
+**Genetic Architecture of Rhizome Development in Diploid Perennial
+Sorghum Reveals Candidate Regions Supported by Local Ancestry**
+
+The study investigates the genetic architecture of
+perenniality-associated traits in the diploid S3011 sorghum population
+developed from an interspecific cross between *Sorghum bicolor* and
+*Sorghum halepense*. Analyses include accession-level mixed-model
+phenotyping, exploratory GWAS, complementary marker-based genome scans,
+local ancestry analysis, linkage disequilibrium characterization,
+multilocus dosage-profile analysis, candidate gene annotation, and
+comparison with historical perenniality QTL.
 
 ## Repository Structure
-- data/raw/ — Raw, unprocessed phenotype data  
-- data/processed/ — Cleaned and analysis-ready datasets  
-- metadata/ — Trait definitions and data dictionary  
 
-## Data Files
-- data/raw/pheno.csv — Raw phenotypic dataset  
-- metadata/trait_definitions.csv — Trait definitions  
+-   scripts/
+-   data/raw/
+-   data/processed/
+-   metadata/
+-   results/figures/
+-   results/tables/
+-   results/intermediate/
+-   results/manuscript_figures/
+-   results/reproducibility/
 
-## Traits Measured
-- Plant height  
-- Lateral tillers  
-- Panicle compactness  
-- Rhizome development  
-- Regrowth capacity  
-- Fertility  
+## Experimental Population
 
-## Experimental Design
-Field evaluation conducted under an augmented design at the plant level.
+The S3011 population was developed from a cross between KS105A (*Sorghum
+bicolor*) and Gypsum 9N (*Sorghum halepense*). Diploid F4 families
+derived through triploid intermediates were evaluated for
+perenniality-associated traits.
 
-## Usage
-This dataset can be used for:
-- GWAS  
-- Genomic prediction  
-- Trait architecture analysis  
+## Phenotypic Traits
 
-## Notes
-Raw data are provided without modification.
+-   Rhizome number
+-   Overwinter regrowth
+-   Plant height
+-   Lateral branching
+
+Accession-level BLUPs estimated using REML-based linear mixed models
+were used in downstream analyses.
+
+## Analysis Workflow
+
+1.  Genotype quality control
+2.  Accession genotype aggregation
+3.  BLUP estimation
+4.  GWAS
+5.  Marker-based genome scan
+6.  GWAS/marker overlap
+7.  Candidate gene annotation
+8.  Local ancestry analysis
+9.  LD analysis
+10. Haplotype analysis
+11. Historical QTL comparison
+12. Manuscript figure generation
+13. Reproducibility metadata
+
+## Reproducibility
+
+Running the scripts sequentially reproduces the analyses, figures, and
+tables. Session information, package versions, checksums, and Git
+metadata are generated automatically.
 
 ## Citation
-Nabukalu et al. (in preparation)
+
+Nabukalu P. et al. *Genetic Architecture of Rhizome Development in
+Diploid Perennial Sorghum Reveals Candidate Regions Supported by Local
+Ancestry*. BMC Plant Biology (under review).
 
 ## Contact
-Pheonah Nabukalu Ph.D
+
+Dr. Pheonah Nabukalu\
+The Land Institute\
+nabukalu@landinstitute.org
